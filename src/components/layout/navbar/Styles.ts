@@ -3,7 +3,7 @@ import styled from "styled-components";
 /* TODO: Consertar bug de quando o site abre no celular, o navbar aparece fazendo animação de slideUp */
 
 
-export const Nav = styled.nav`
+export const Nav = styled.nav<{ navIsVisible : boolean }>`
   background-color: rgb(56,56,56);
   z-index: 1000;
 
@@ -58,15 +58,15 @@ export const List = styled.ul`
   li {
     border-bottom: 1px solid rgb(237,237,238, .5);
     padding: 0.7rem 0;
-  }
-
-  li a{
-    text-decoration: none;
-    color: white;
 
     &:hover {
       transition: .5s;
       color: rgb(212,175,55);
     }
+  }
+
+  li a {
+    text-decoration: none;
+    color: white;
   }
 `

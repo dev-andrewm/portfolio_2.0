@@ -20,9 +20,10 @@ export const List = styled.ul`
 export const ListItem = styled.li`
   color: ${({theme}) => theme.colors.primaryWhite};
     cursor: pointer;
+    transition: .5s;
 
     &:hover {
-      background-color: red;
+      color: ${({theme}) => theme.colors.primaryYellow};
       cursor: pointer;
     }
 `
